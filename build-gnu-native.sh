@@ -4,8 +4,8 @@ mkdir bin
 cd bin
 
 # Use optimization for current CPU architecture
-CFLAGS="-march=native"
-CXXFLAGS="-march=native"
+export CFLAGS="-march=native"
+export CXXFLAGS="-march=native"
 
 # Use GNU C Library malloc instead of Microsoft mimalloc
 cmake -DMEMORY_ALLOCATOR=standard ..
